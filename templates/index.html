@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+    {% block conteudo %}
+    <fieldset>
+        <form action="/index" method="POST" id="idforms">
+            <label name="sal">Salário</label><br>
+            <input type="number" name="sal"><br>
+            <label name="ida">Idade</label><br>
+            <input type="number" name="ida" min="0" max="130"><br>
+            <label name="divi">Divida</label><br>
+            <input type="number" name="divi"><br>
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </fieldset>
+    
+    {% endblock %}
