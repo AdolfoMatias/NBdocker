@@ -2,7 +2,7 @@ FROM tiangolo/uwsgi-nginx-flask:python3.8
 
 WORKDIR /app/
 
-COPY ./requirements.txt /app/
+COPY .flaskenv ./requirements.txt ./model.pkl /app/
 COPY /static/ /app/static
 COPY /templates/ /app/templates
 
