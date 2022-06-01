@@ -1,4 +1,3 @@
-from copyreg import pickle
 from flask import Flask, render_template, request
 import pickle
 
@@ -19,5 +18,5 @@ def predicao():
     return (f"Credito: {str(prever)}")
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(host="0.0.0.0", port=5000)
 
